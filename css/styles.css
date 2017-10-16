@@ -1,9 +1,20 @@
 
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    color: #747704;
+	font-family: 'Open Sans', sans-serif;
+	color: #5e5e5e;
     font-weight: 300;
+}
+h4.big {
+	font-family: 'Open Sans', sans-serif;
+	color: #5e5e5e;
+	font-weight: 300;
+	line-height: 1.5;
+}
+.button-style {
+	font-family: 'Open Sans', sans-serif;
+	color: #5e5e5e;
+	font-weight: 300;
 }
 .text-muted {
     color: #BCBBBB;
@@ -15,6 +26,8 @@ body {
     font-size: 60px;
 }
 .title-logo {
+	max-width: 100px;
+	max-height: 100px;
     margin: 20px;
 }
 .section {
@@ -26,4 +39,9 @@ body {
 .img-project {
     max-height: 300px;
 }
-
+.mouse-hover {
+	cursor: pointer;
+}
+.pull-right {
+	float: right;
+}

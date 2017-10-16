@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <title>GeneKao Portfolio</title>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
         <!--Here I had some problem using the bootstrap 4.0 so I use CDN instead-->
         <!--<link rel="stylesheet" href="css/bootstrap.css">-->
@@ -14,10 +14,10 @@
         <!--<link rel="stylesheet" href="css/styles.css">-->
         <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
 
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
-        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
@@ -29,11 +29,14 @@
             <header>
             <div class="row">
                 <div class="col-md-6">
-                    <img class="title-logo" src="images/Leopard-ICON-circle_small.png" alt="Leopard logo">
+                    <img class="title-logo" src="images/PortfolioPicture.png" alt="Leopard logo">
                 </div>
+
                 <div class="title-super col-md-6 text-right text-uppercase">
                     <h1>Gene Ting-Chun Kao</h1>
                     <h4>Architect / Software Engineer</h4>
+                    <button type="button" class="btn btn-default pull-right button-style" data-toggle="modal" data-target="#myModal">About Me</button>
+                    <!--<h4>About Me</h4>-->
                 </div>
             </div>
             <div class="row">
@@ -44,94 +47,349 @@
             </header>
             <div class="row">
                 <div class="col-md-12">
-                    <img class="img-responsive" src="images/pavilion_butterfly.jpg" alt="Butterfly Pavilion">
+                    <img class="img-responsive" src="images/Dome.png" alt="Subdivision Dome">
                 </div>
             </div>
 
             <section class="row">
 
                 <header class="col-md-12 section">
-                    <h2>Portfolio</h2>
+                    <h2>Projects</h2>
                 </header>
 
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Modal Header</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>Some text in the modal.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
                 <article class="col-md-4">
-                    <img class="img-responsive img-rounded img-thumbnail" src="images/profilePicture.jpg" alt="profile picture">
-                    <h3 class="title">About me</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
+                    <img class="img-responsive img-rounded img-thumbnail mouse-hover" data-toggle="modal" data-target="#Assembly-aware-Shell"
+                         src="images/assembly-aware-shell.png" alt="Assembly-aware design of masonry shell
+                         structures: a computational approach">
+                    <h3 class="title">Assembly-aware-Shell</h3>
                 </article>
+
                 <article class="col-md-4">
-                    <img class="img-responsive img-rounded img-thumbnail" src="images/Leopard-Logo.png" alt="Leopard GH plugin">
+                    <img class="img-responsive img-rounded img-thumbnail mouse-hover"
+                         src="images/Leopard.png" alt="Leopard GH plugin" data-toggle="modal" data-target="#Leopard">
                     <h3 class="title">Leopard</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
                 </article>
-                <article class="col-md-4">
-                    <img class="img-responsive img-rounded img-thumbnail" src="images/digitalLamp.jpg" alt="master thesis 3d printed model">
-                    <h3>Digital Lamp</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
-                </article>
-            </section>
 
-            <section class="row">
                 <article class="col-md-4">
-                    <img class="img-responsive img-rounded" src="images/swarmBridge.jpg" alt="python swarm bridge">
-                    <h3>Swarm Bridge</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
+                    <img class="img-responsive img-rounded img-thumbnail mouse-hover" data-toggle="modal" data-target="#Pavilion"
+                         src="images/icd-itke-pavilion.png" alt="ICD-ITKE-Pavilion">
+                    <h3 class="title">ICD/ITKE Pavilion 2015/16</h3>
                 </article>
-                <article class="col-md-4">
-                    <img class="img-responsive img-rounded" src="images/java3d.png" alt="java 3d applet">
-                    <h3>Java 3d environment</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
-                </article>
-                <article class="col-md-4">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/300x200">
-                    <h3>Appify</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
-                </article>
+
             </section>
 
             <section class="row">
 
-                <header class="col-md-12">
-                    <h2>Publication</h2>
-                </header>
+                <article class="col-md-4">
+                    <img class="img-responsive img-rounded img-thumbnail mouse-hover" data-toggle="modal" data-target="#Fish"
+                         src="images/Fish.png" alt="Fish">
+                    <h3 class="title">Fish</h3>
+                </article>
 
                 <article class="col-md-4">
-                    <img class="img-responsive" src="http://placehold.it/300x200">
-                    <h3>Appify</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
+                    <img class="img-responsive img-rounded img-thumbnail mouse-hover" data-toggle="modal" data-target="#SwarmBridge"
+                         src="images/SwarmBridge.png" alt="Swarm Bridge">
+                    <h3 class="title">Swarm Bridge</h3>
                 </article>
+
                 <article class="col-md-4">
-                    <img class="img-responsive" src="http://placehold.it/300x200">
-                    <h3>Appify</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
+                    <img class="img-responsive img-rounded img-thumbnail mouse-hover" data-toggle="modal" data-target="#DigitalLampGUI"
+                         src="images/DigitalLampGUI.png" alt="DigitalLampGUI">
+                    <h3 class="title">Digital Lamp GUI</h3>
                 </article>
-                <article class="col-md-4">
-                    <img class="img-responsive" src="http://placehold.it/300x200">
-                    <h3>Appify</h3>
-                    <p><a href="http://github.com">Link to project</a></p>
-                </article>
+
+
             </section>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Gene Ting-Chun Kao</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-responsive img-rounded img-thumbnail" src="images/profilePicture.jpg" alt="profile picture">
+                            <article>
+                                <h4 class="big text-center">
+                                    Gene Ting-Chun Kao is an architect, a designer as well as a prolific programmer.
+                                    He specialises in advanced geometry, computational design, form finding, and digital
+                                    fabrication. He is currently doing research & innovation, development, programming
+                                    and software development in 5D.BIM Department, Technical Head Office, in Züblin
+                                    Strabag AG. He completed his master thesis in two institutes— Institute of Building
+                                    Structures and Structural Design (ITKE) and Institute for Computational Design and
+                                    Construction (ICD) in University of Stuttgart, Germany. By cooperating with
+                                    architects, computer scientists, and structure engineers, he has developed several
+                                    programs to integrate interdisciplinary fields. In his perspective, architectural
+                                    aesthetics is closely related to structure system and geometry logic. In 2013,
+                                    GENEATCG (www.geneatcg.com) was established, and he shared many open source codes
+                                    online. He believes that programming and mathematics will lead architectural design
+                                    into a whole new era.
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="Leopard" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Leopard</h4>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/5khJ7bxtvYs" frameborder="0" allowfullscreen></iframe>
+                            <article>
+                                <h4 class="big text-center">
+                                    I wrote this short swarm script with GUI interface in Processing about 4 years ago
+                                    (When I began to code)… Now I figure out lotsof code from this script should be
+                                    improved! For instance, we can implement KDTree later…
+
+                                    Hope this code from the previous version will help people who needs or interested in it.
+
+                                    Source code please see article on my website.
+
+                                    http://www.geneatcg.com/2016/05/02/swarm-3d-gui-with-a-tail/
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="Fish" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Fish</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                            <iframe width="1120" height="630" class="embed-responsive-item"
+                                    src="https://www.youtube.com/embed/5khJ7bxtvYs" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <article>
+                                <h4 class="big text-center">
+                                    I wrote this short swarm script with GUI interface in Processing about 4 years ago
+                                    (When I began to code)… Now I figure out lotsof code from this script should be
+                                    improved! For instance, we can implement KDTree later…
+                                    <br><br>
+                                    Hope this code from the previous version will help people who needs or interested in it.
+                                    <br><br>
+                                    Source code please see article on my website.
+                                    <br><br>
+                                    http://www.geneatcg.com/2016/05/02/swarm-3d-gui-with-a-tail/
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="SwarmBridge" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Rhino.Python Swarm Bridge</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="1120" height="630" class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/Vl4k08GAAzU" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <article>
+                                <h4 class="big text-center">
+                                    Swarm Behavior + Attractor : Agent methods:
+                                    1. Align : Move in the same direction as your neighbours.
+                                    2. Cohesion : Remain close to your neighbours.
+                                    3. Seperation : Avoid collisions with your neighbours. Attractor methods:
+                                    (Controlling the shape) From starting points move to target points to create bridge.
+                                    Using swarm simulation in Grasshopper is in this post: Swarm Python GH Component
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="DigitalLampGUI" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Fish</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="1120" height="630" class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/bwhxG6XmvGQ" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <article>
+                                <h4 class="big text-center">
+                                    After two years..... finally have time to upload my undergraduate architectural
+                                    thesis design Processing + Java code to github.com as open source.
+                                    Take a look if anyone is interesting, and welcome to download it.
+                                    Java environment is Java SE 6.
+                                    <br><br>
+                                    <a href="https://github.com/GeneKao/DigitalLampThesisGUI_v0a01">Go to Github Link</a>
+                                    <br><br>
+                                    DigitalLampThesisGUI_v0a01
+                                    <br><br>
+                                    The Digital Lamp of Architecture - A New Church Prototype
+                                    <a href="http://www.geneatcg.com/2013/11/28/thesis-design-process/">Thesis Video</a>
+                                    <a href="http://www.geneatcg.com/2013/07/25/the-digital-lamp-of-architecture-a-new-church-prototype/">
+                                        3D Printed Model(Also generated by this java code)</a>
+                                    <br><br>
+                                    This is GUI software of Project of "The Digital Lamp of Architecture"
+                                    Written by Gene Ting-Chun Kao +GENEATCG http://www.geneatcg.com all right
+                                    reserve. Code written in 2013/05
+                                    Code credit to Jared Counts Curtain Coding Structure in BlueThen.com
+                                    The Digital Lamp of Architecture referred to John Ruskin's book
+                                    "The Seven Lamps of Architecture, " and make a comparison between its age
+                                    and our digital age. Through traveling, description in theory can be highly
+                                    discovered within backpacker's own eye. Finally, digital technology was implanted
+                                    into church architecture as an example to reflect on Ruskin's theory. One of the
+                                    most important element is "Sublime." Besides, scale, structure and ornamentation
+                                    was used to interpret and practice in Digital Architecture.
+
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="Pavilion" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Fish</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="1120" height="630" class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/zQqyCgEMfHs" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <article>
+                                <h4 class="big text-center">
+                                    <p>I was in the computational design team while designing the
+                                        <a href="http://icd.uni-stuttgart.de/?p=16220" target="_blank">ICD</a>/
+                                        <a href="http://www.itke.uni-stuttgart.de/entwicklung.php?id=71" target="_blank">ITKE</a>
+                                        Research Pavilion 2015-16 and was mainly in charge of developing computational tools. </p>
+
+                                    <p>Here is the demonstration video to show the geometrical implementation.
+                                        One of the input parameters from the plugin is a mesh surface,
+                                        and the output parameters are all tree data structure thus some double-layer
+                                        light weight structure as well as some planar plates can be generated
+                                        (Planar plate wasn't realized due to the decision making and scheduling
+                                        during the development). All the geometries are labeled in the right sequence
+                                        so they can be fabricated directly: </p>
+
+
+                                    <p>The demo video above shows the workflow from mesh to pavilion geometry by using
+                                        our customised <a href="http://www.grasshopper3d.com" target="_blank">Grasshopper
+                                        </a> component, and we can select vertices from the mesh by using
+                                        <a href="http://www.food4rhino.com/app/selectable-preview">Selectable Preview</a>
+                                        plugin. Finally, the customised component can generate plate and double layer
+                                        topology seamlessly. </p>
+
+                                    <p> Some part of the code is on my <a href="https://github.com/GeneKao/Pavilion2015_ITECH">
+                                        github</a> and the code project was developed together with Julian Wengzinek,
+                                        Thu Nguyen-Phuoc and Long Nguyen.</p>
+
+                                    The pavilion project video from the design development to the fabrication process
+                                    can be seen in the video from ICD/ITKE <a href="https://vimeo.com/165006724">here</a>.
+
+                                    <br><p></p>
+
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="Assembly-aware-Shell" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Fish</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="1120" height="630" class="embed-responsive-item"
+                                        src="https://www.youtube.com/embed/zQqyCgEMfHs" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <article>
+                                <h4 class="big text-center">
+
+                                    <p>Here is the demonstration video to show the geometrical implementation.
+                                        One of the input parameters from the plugin is a mesh surface,
+                                        and the output parameters are all tree data structure thus some double-layer
+                                        light weight structure as well as some planar plates can be generated
+                                        (Planar plate wasn't realized due to the decision making and scheduling
+                                        during the development). All the geometries are labeled in the right sequence
+                                        so they can be fabricated directly: </p>
+
+                                </h4>
+                            </article>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
         </div>
     </body>
 </html>
