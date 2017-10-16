@@ -1,14 +1,29 @@
 
 
-
-
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #747704;
+    font-weight: 300;
+}
+.text-muted {
+    color: #BCBBBB;
+}
+.text-thin {
+    font-weight: 100;
+}
+.title-super {
+    font-size: 60px;
+}
+.title-logo {
+    margin: 20px;
+}
 .section {
-
 	color: dimgray;
 }
-
-
 .title {
-
 	color: silver;
 }
+.img-project {
+    max-height: 300px;
+}
+
