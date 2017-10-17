@@ -11,6 +11,14 @@ h4.big {
 	font-weight: 300;
 	line-height: 1.5;
 }
+.projects-title {
+    margin-top: 50px;
+}
+.title {
+    color: silver;
+    margin-bottom: 50px;
+    text-align: center;
+}
 .button-style {
 	font-family: 'Open Sans', sans-serif;
 	color: #5e5e5e;
@@ -33,9 +41,6 @@ h4.big {
 .section {
 	color: dimgray;
 }
-.title {
-	color: silver;
-}
 .img-project {
     max-height: 300px;
 }
@@ -44,4 +49,13 @@ h4.big {
 }
 .pull-right {
 	float: right;
+}
+footer {
+	margin-top: 50px;
+	font-size: 1.2em;
+	font-weight: 400;
+	text-align: center;
+}
+iframe {
+    border: 0;
 }
