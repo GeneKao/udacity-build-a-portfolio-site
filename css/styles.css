@@ -19,6 +19,11 @@ h4.big {
     margin-bottom: 50px;
     text-align: center;
 }
+hr {
+    display: block;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+}
 .button-style {
 	font-family: 'Open Sans', sans-serif;
 	color: #5e5e5e;
