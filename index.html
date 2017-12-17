@@ -21,21 +21,12 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
-    <!--Here I had some problem using the bootstrap 4.0 so I use 3.3.7 or CDN instead-->
-    <!--<link rel="stylesheet" href="css/bootstrap.css">-->
-    <!--<link rel="stylesheet" href="css/bootstrap-grid.css">-->
-    <!--<link rel="stylesheet" href="css/bootstrap-reboot.css">-->
-    <!--<link rel="stylesheet" href="css/styles.css">-->
-    <!--<script type="text/javascript" src="js/bootstrap.js"></script>-->
-
     <!--Bootstrap and customised style-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+
 </head>
 
 <body>
@@ -49,7 +40,7 @@
             <!--image on the right-->
             <div class="title-super col-md-6 col-sm-8 col-xs-8 text-right text-uppercase">
                 <h1>Gene Ting-Chun Kao</h1>
-                <h4>Architect / Software Engineer</h4>
+                <h4>Architectural Engineer | Design Researcher | Software Developer</h4>
                 <button type="button" class="btn btn-default pull-right button-style" data-toggle="modal"
                         data-target="#AboutMe">About Me
                 </button>
@@ -90,6 +81,12 @@
 
         <article class="col-md-4">
             <img class="img-responsive img-rounded img-thumbnail mouse-hover"
+                 src="images/PhysX.png" alt="PhysX" data-toggle="modal" data-target="#PhysX">
+            <h3 class="title">PhysX.GH</h3>
+        </article>
+
+        <article class="col-md-4">
+            <img class="img-responsive img-rounded img-thumbnail mouse-hover"
                  src="images/icd-itke-pavilion.png" alt="ICD-ITKE-Pavilion" data-toggle="modal" data-target="#Pavilion">
             <h3 class="title">ICD/ITKE Pavilion 2015/16</h3>
         </article>
@@ -110,6 +107,18 @@
             <img class="img-responsive img-rounded img-thumbnail mouse-hover"
                  src="images/DigitalLampGUI.png" alt="DigitalLampGUI" data-toggle="modal" data-target="#DigitalLampGUI">
             <h3 class="title">Digital Lamp GUI</h3>
+        </article>
+
+        <article class="col-md-4">
+            <img class="img-responsive img-rounded img-thumbnail mouse-hover"
+                 src="images/butterfly.png" alt="butterfly" data-toggle="modal" data-target="#butterfly">
+            <h3 class="title">Butterfly Effect</h3>
+        </article>
+
+        <article class="col-md-4">
+            <img class="img-responsive img-rounded img-thumbnail mouse-hover"
+                 src="images/LEGO.png" alt="lego" data-toggle="modal" data-target="#lego">
+            <h3 class="title">LEGO Tool</h3>
         </article>
     </section>
 
@@ -213,6 +222,41 @@
     </div>
 </div>
 
+<div class="modal fade" id="PhysX" role="dialog">
+    <div class="modal-dialog">
+        <!-- PhysX-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">PhysX.GH_WIP</h3>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="1120" height="630" class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/nVT1S3aaJgU"
+                            allowfullscreen></iframe>
+                </div>
+                <article>
+                    <br>
+                    <h4><strong>
+                        <a href="https://github.com/TheAsianCoders/PhysX.GH">Source Code</a></strong></h4>
+                    <br>
+                    <p class="text-justify">
+                        This is a work in progress project. We implementation Nvidia PhysX into Grasshopper components.
+                        We are using StillDesign's
+                        <a href="https://github.com/stilldesign/PhysX.Net">PhysX.Net</a> C# Wrapper.
+                        In this video we have 1850 Meshes, play it with 8x speed and real time speed.
+                        More about my personal work to see - www.geneatcg.com
+                    </p>
+                </article>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="Fish" role="dialog">
     <div class="modal-dialog">
         <!-- Fish-->
@@ -269,11 +313,11 @@
                             Source Code</a></strong></h4>
                     <br>
                     <p>Swarm Behavior + Attractor : Agent methods:</p>
-                        <ol class="list-item">
-                            <li>Align: Move in the same direction as your neighbours.</li>
-                            <li>Cohesion: Remain close to your neighbours.</li>
-                            <li>Seperation: Avoid collisions with your neighbours. </li>
-                        </ol>
+                    <ol class="list-item">
+                        <li>Align: Move in the same direction as your neighbours.</li>
+                        <li>Cohesion: Remain close to your neighbours.</li>
+                        <li>Seperation: Avoid collisions with your neighbours. </li>
+                    </ol>
                     <p class="text-justify">
                         Attractor methods: (Controlling the shape)
                         <br>
@@ -354,6 +398,8 @@
                 <h3 class="modal-title">ICD/ITKE Research Pavilion 2015/16</h3>
             </div>
             <div class="modal-body">
+                <img src="images/pavilion-topo.jpg" alt="pavilionTopo" style="width:100%">
+                <br><br>
                 <div class="embed-responsive embed-responsive-16by9">
                     <iframe width="1120" height="630" class="embed-responsive-item"
                             src="https://www.youtube.com/embed/zQqyCgEMfHs"
@@ -387,6 +433,7 @@
                         github</a> and the code project was developed together with Julian Wengzinek,
                         Thu Nguyen-Phuoc and Long Nguyen.
                         <br><br>
+                        <img src="images/pavilion-render.png" alt="pavilionRender" style="width:100%">
                         The video of ICD/ITKE pavilion project can be seen here.
                         <br>
                     </p>
@@ -444,6 +491,72 @@
                         offering sufficient accuracy for our purposes. Finally, we verified our method using
                         small-scale 3D printed models.
                     </p>
+                </article>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="butterfly" role="dialog">
+    <div class="modal-dialog">
+        <!-- Assembly-aware design of masonry shell structures-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">Butterfly Effect Pavilion - Ilan Green Expo</h3>
+            </div>
+            <div class="modal-body">
+                <article>
+                    <img src="images/pavilionBE.jpg" alt="pavilionBE" style="width:100%">
+                    <br><br>
+                    <p class="big text-justify">
+                        More pictures and description can be seen on my website
+                        <a href="http://www.geneatcg.com/2014/06/26/butterfly-effect-pavilion-lan-green-expo/">GENEATCG</a>
+                    </p>
+                    <img src="images/butterflyKids.jpg" alt="pavilionKids" style="width:100%">
+                </article>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lego" role="dialog">
+    <div class="modal-dialog">
+        <!-- Assembly-aware design of masonry shell structures-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3 class="modal-title">LEGO Tool for Rhino</h3>
+            </div>
+            <div class="modal-body">
+                <article>
+                    <img src="images/3d-LEGO-component.jpg" alt="pavilionKids" style="width:100%">
+                    <br><br>
+                    <h4><strong>
+                        <a href="http://www.geneatcg.com/2013/12/14/lego-component-for-3d-printing/">Source Code</a></strong></h4>
+                    <br>
+                    <p class="big text-justify">
+                        LEGO component for 3d printing. You can design and 3d print your own lego component by using this small tool.
+                        LEGO customized components developed through Python script using Rhino 3D software.
+                        <br>
+                        Mouse left click => make LEGO up part.
+                        <br>
+                        Mouse left click => make LEGO down part.
+                        <br>
+                        Basically, the methodology is quite simple.
+                    </p>
+                    <ol class="list-item">
+                        <li>Replace any surface with lego unit. We can find its dimensions here.</li>
+                        <li>Trim a hole.</li>
+                        <li>Extrude surfaces.</li>
+                        <li>Join all faces.</li>
+                    </ol>
                 </article>
             </div>
             <div class="modal-footer">
